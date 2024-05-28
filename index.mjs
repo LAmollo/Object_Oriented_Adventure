@@ -81,3 +81,13 @@ class Companion extends Character {
     // Logic for assistance
   }
 }
+
+
+robin.inventory = ["sword", "potion", "artifact"];
+
+const leo = new Companion("Leo", "Cat");
+const frank = new Companion("Frank", "Flea");
+frank.inventory = ["small hat", "sunglasses"];
+
+robin.companion = leo;
+leo.companion = frank;
