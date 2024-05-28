@@ -68,3 +68,16 @@ class Adventurer extends Character {
     // Logic for the special ability
   }
 }
+
+class Companion extends Character {
+  constructor(name, type) {
+    super(name);
+    this.type = type;
+  }
+
+  // Example of a companion-specific method
+  assistOwner() {
+    console.log(`${this.name} is assisting ${this.owner}'s.`);
+    // Logic for assistance
+  }
+}
