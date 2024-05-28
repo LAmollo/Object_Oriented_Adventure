@@ -49,3 +49,22 @@ robin.companion.type = "Cat";
 robin.companion.companion = new Character("Frank");
 robin.companion.companion.type = "Flea";
 robin.companion.companion.inventory = ["small hat", "sunglasses"];
+
+class Adventurer extends Character {
+  constructor(name, role) {
+    super(name);
+    this.role = role;
+    this.inventory.push("bedroll", "50 gold coins");
+  }
+
+  scout() {
+    console.log(`${this.name} is scouting ahead...`);
+    super.roll();
+  }
+
+  // Example of a special ability specific to adventurers
+  useSpecialAbility() {
+    console.log(`${this.name} is using a special ability!`);
+    // Logic for the special ability
+  }
+}
